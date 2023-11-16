@@ -41,12 +41,34 @@
       <section id="secao4">
         <h1>Agendamento Online</h1>
         <form action="" method="post" class="form-agendamento">
-          <h2 id="titulo-agendamento">
-            Preencha seus dados e escolha um dia e horário
-          </h2>
+            <h2 id="titulo-agendamento">
+                Preencha seus dados e escolha um dia e horário
+            </h2>
 
-         <iframe src="javaScript(temporario)/index.html" frameborder="0"></iframe>
-      </section>
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" />
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" />
+
+            <label for="data-agendamento">Data do Agendamento:</label>
+            <input type="date" id="data-agendamento" />
+
+            <label for="hora-agendamento">Horário do Agendamento:</label>
+            <input type="time" id="hora-agendamento" />
+
+            <label for="mensagem">Observação:</label>
+            <textarea id="message" name="mensagem" rows="3"></textarea>
+
+            <button id="botao-agendamento" type="submit">Agendar</button>
+
+            <p id="mensagem-sucesso" class="hidden">Formulário enviado com sucesso!</p>
+        </form>
+       
+    </section>
 
       <!-- SEÇÃO 5 - EDUCAÇÃO LÚDICA -->
 
@@ -176,6 +198,7 @@
         </div>
       </section>
     </div>
-    <script src="javaScript(temporario)/script.js"></script>
+    <script src="form.js"></script>
   </body>
+
 </html>
