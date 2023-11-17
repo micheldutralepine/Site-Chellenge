@@ -1,181 +1,197 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Plataforma Web</title>
-    <link rel="stylesheet" href="css/style.css" />
-  </head>
-  <body>
-    <div id="container">
-      <head>
-        Cabeçalho
-      </head>
 
-      <!-- MENU NAVEGAÇÃO  -->
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Plataforma Web</title>
+  <link rel="stylesheet" href="css/style.css" />
 
+</head>
+
+<body>
+
+  <!-- MENU NAVEGAÇÃO  -->
+  <header id="header">
+    <div class="header-container">
+      <div class="logo">
+        <img src="./imgs/logo-certa.jpg" alt="">
+      </div>
       <nav>
-        <a href="#secao1"> Sobre o Hospital </a>
-        <a href="#secao2"> Localização e Horários </a>
-        <a href="#secao3"> Informações </a>
-        <a href="#secao4"> Agendamento </a>
-        <a href="#secao5"> Educação Lúdica </a>
-        <a href="#secao6"> Perfil Personalizado </a>
-      </nav>
-
-      <section id="secao1">
-        <h1>Sobre o Hospital</h1>
-        Conteúdo
-      </section>
-      <section id="secao2">
-        <h1>Impactos Negativos do Problema x Impactos Positivos da Solução</h1>
-        Conteúdo
-      </section>
-      <section id="secao3">
-        <h1>Informações</h1>
-        Conteúdo
-      </section>
-
-      <!-- SEÇÃO 4 - AGENDAMENTO  -->
-
-      <section id="secao4">
-        <h1>Agendamento Online</h1>
-        <form action="" method="post" class="form-agendamento">
-          <h2 id="titulo-agendamento">
-            Preencha seus dados e escolha um dia e horário
-          </h2>
-
-         <iframe src="javaScript(temporario)/index.html" frameborder="0"></iframe>
-      </section>
-
-      <!-- SEÇÃO 5 - EDUCAÇÃO LÚDICA -->
-
-      <section id="secao5">
-        <h1>Educação Lúdica</h1>
-
-        <div class="videos">
-          <h3>Vídeos explicativos com Desenhos Animados</h3>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-          <iframe
-            width="560"
-            height="315"
-            src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh"
-            title="YouTube video player"
-            frameborder="0"
-            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-            allowfullscreen
-          ></iframe>
-        </div>
-
-        <div class="relatos">
-          <h3>Relatos de Pacientes</h3>
-          <p>
-            Compartilhamos experiências inspiradoras de pacientes que passaram
-            por aqui. Suas histórias podem ajudar a tranquilizar e acabar com o
-            medo dos outros.
-          </p>
-        </div>
-      </section>
-
-      <!-- SEÇÃO 6 - PERFIL PERSONALIZADO -->
-      <section id="secao6">
-        <h1>Perfil Personalizado</h1>
-
-        <div class="foto-perfil">
-          <img id="preview-foto" src="" alt="" />
-          <input type="file" id="upload-foto" accept="image/*" />
-        </div>
-
-        <div class="informação-pessoal">
-          <label for="nome-paciente">Nome:</label>
-          <input type="text" id="nome-paciente" placeholder="Digite seu nome" />
-
-          <label for="idade-paciente">Idade:</label>
-          <input
-            type="number"
-            id="idade-paciente"
-            placeholder="Digite sua idade"
-            min="0"
-          />
-
-          <label for="cor-fav">Cor favorita:</label>
-          <input
-            type="text"
-            id="cor-fav"
-            placeholder="Qual é sua cor favorita?"
-          />
-
-          <label for="comida-fav">Comidas Favoritas:</label>
-          <input
-            type="text"
-            id="comida-fav"
-            placeholder="Quais são suas comidas favoritas?"
-          />
-
-          <label for="hobbies">Hobbies:</label>
-          <input
-            type="text"
-            id="hobbies"
-            placeholder="Quais são seus hobbies?"
-          />
-
-          <label for="alergias">Alergias:</label>
-          <input
-            type="text"
-            id="alergias"
-            placeholder="Possui alguma alergia?"
-          />
-
-          <button id="botao-perfil" type="submit">Atualizar Informações</button>
-        </div>
-
-        <div class="historico-tratamento">
-          <h3>Histórico de Tratamento:</h3>
+        <div class="menu">
           <ul>
-            <li>
-              <strong>Consulta em 15/08/2023 - Dr. Silva</strong>
-              <textarea rows="2" placeholder="Obsevações:"></textarea>
-            </li>
-            <li>
-              <strong>Exame de sangue em 18/08/2023</strong>
-              <textarea rows="2" placeholder="Obsevações:"></textarea>
-            </li>
+            <li><a href="#secao1"> Sobre o Hospital </a></li>
+            <li><a href="#secao2"> Localização e Horários </a></li>
+            <li><a href="#secao3"> Informações </a></li>
+            <li><a href="#secao4"> Agendamento </a></li>
+            <li><a href="#secao5"> Educação Lúdica </a></li>
+            <li><a href="#secao6"> Perfil Personalizado </a></li>
           </ul>
         </div>
-
-        <div class="alterar-tema">
-          <h3>Personalização de Tema</h3>
-          <label for="cor-tema">Escolha a Cor do Tema:</label>
-          <input type="color" id="cor-tema" />
-        </div>
-      </section>
+      </nav>
     </div>
-    <script src="javaScript(temporario)/script.js"></script>
-  </body>
+  </header>
+
+  <!-- Banner  -->
+  <div class="img-banner">
+    <img width="100%" height="500px" src="./imgs/banner4.avif" alt="">
+  </div>
+
+  <!-- SEÇÃO 1 SOBRE O HOSPITAL-->
+
+  <section id="secao1">
+    <div class="hospital-container">
+      <div class="hospital-conteudo">
+        <div class="hospital-titulo">
+          <h1>Sobre o Hospital</h1>
+          <div class="hospital-discricao">
+            <img src="./imgs/Instituto-da-criança-sobre.jpg" alt="">
+            <div class="hospital-texto">
+              <p>Fundado em 1976 por um grupo de pediatras liderados pelo Prof. Eduardo Marcondes, o Instituto da Criança do Hospital das Clínicas da FMUSP comemorou em dezembro de 2016, 40 anos homenageando seus pioneiros, refletindo sobre os desafios atuais e futuros da saúde da criança e do adolescente e celebrando sua renovação pela arte do artista Gustavo Rosa, que reforça um dos pilares institucionais – a humanização do atendimento. <span id="pontos">...</span> <span id="mais">
+
+                  Por meio do projeto Pintando o bem na saúde, o instituto Gustavo Rosa doou 120 reproduções de obras alegres, que trazem ludicidade aos ambientes e contribuem para um melhor acolhimento dos pacientes e suas famílias.
+
+                  Considerado Centro de Referência Nacional em Saúde da Criança pelo Ministério da Saúde, o hospital ocupa uma área de cerca de 25 mil metros quadrados, destinada ao atendimento ambulatorial e internações – com 226 leitos e mais de 70 mil atendimentos ambulatoriais por ano.
+
+                  Atende pacientes do Sistema Único de Saúde e de operadoras de planos de saúde (Saúde Suplementar) por meio de suas enfermarias e apartamentos, Centro Cirúrgico, Centro de Tratamento Intensivo Neonatal 1 e 2 (alocado no Instituto Central do Hospital das Clínicas), UTI Pediátrica, Ambulatório, Unidade de Diálise, Pronto-Socorro e Centro de Diagnóstico. O ICr possui ainda um prédio que abriga o Serviço de Onco-hematologia e transplante de Células Hematopoiéticas, o Instituto de Tratamento do Câncer Infantil (ITACI).
+
+                  A utilização de tecnologia de ponta possibilita a realização de procedimentos diagnósticos e terapêuticos de alta complexidade. Tratam-se de cirurgias de grande porte, como transplantes de fígado, de rim e medula óssea, separação de gêmeos xifópagos, hemodiálise especializada, tratamento de recém-nascidos de alto risco, atendimento de Terapia Intensiva, além da assistência a doenças crônicas complexas na infância e na adolescência. O ambulatório das diversas especialidades realiza seguimento a 18 mil crianças e adolescentes portadores de síndromes raras de difícil elucidação diagnóstica e tratamento
+
+                  Esta abordagem integral da infância tem possibilitado maior qualidade de vida aos nossos adolescentes, que hoje compreendem 45% dos pacientes.
+                  Nossa equipe multidisciplinar conta com enfermeiros, fisioterapeutas, nutricionistas, psicólogos, fonoaudiólogos, dentistas, farmacêuticos, radiologistas, terapeutas ocupacionais, recreacionistas e assistentes sociais, além do corpo clínico composto por 21 especialidades.</span></p>
+              <button class="leia-mais" onclick="leiaMais()" id="btnLeiaMais">Leia mais</button>
+
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Seção 2 Impactos -->
+
+
+  <section id="secao2">
+    <h1>Impactos Negativos do Problema x Impactos Positivos da Solução</h1>
+    Conteúdo
+  </section>
+
+  <!-- Seção 3 - Informações -->
+
+  <section id="secao3">
+    <h1>Informações</h1>
+    Conteúdo
+  </section>
+
+  <!-- SEÇÃO 4 - AGENDAMENTO  -->
+
+   <section id="secao4">
+        <h1>Agendamento Online</h1>
+        <form action="" method="post" class="form-agendamento">
+            <h2 id="titulo-agendamento">
+                Preencha seus dados e escolha um dia e horário
+            </h2>
+
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" />
+
+            <label for="email">E-mail:</label>
+            <input type="email" id="email" />
+
+            <label for="telefone">Telefone:</label>
+            <input type="tel" id="telefone" />
+
+            <label for="data-agendamento">Data do Agendamento:</label>
+            <input type="date" id="data-agendamento" />
+
+            <label for="hora-agendamento">Horário do Agendamento:</label>
+            <input type="time" id="hora-agendamento" />
+
+            <label for="mensagem">Observação:</label>
+            <textarea id="message" name="mensagem" rows="3"></textarea>
+
+            <button id="botao-agendamento" type="submit">Agendar</button>
+
+            <p id="mensagem-sucesso" class="hidden">Formulário enviado com sucesso!</p>
+        </form>
+       
+
+  <!-- SEÇÃO 5 - EDUCAÇÃO LÚDICA -->
+
+  <section id="secao5">
+    <h1>Educação Lúdica</h1>
+
+    <div class="videos">
+      <h3>Vídeos explicativos com Desenhos Animados</h3>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+      <iframe width="560" height="315" src="https://www.youtube.com/embed/SS4HMzDs2Bc?si=mh7QmmmAa982CLBh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+    </div>
+
+    <div class="relatos">
+      <h3>Relatos de Pacientes</h3>
+      <p>
+        Compartilhamos experiências inspiradoras de pacientes que passaram
+        por aqui. Suas histórias podem ajudar a tranquilizar e acabar com o
+        medo dos outros.
+      </p>
+    </div>
+  </section>
+
+  <!-- SEÇÃO 6 - PERFIL PERSONALIZADO -->
+  <section id="secao6">
+    <h1>Perfil Personalizado</h1>
+
+    <div class="foto-perfil">
+      <img id="preview-foto" src="" alt="" />
+      <input type="file" id="upload-foto" accept="image/*" />
+    </div>
+
+    <div class="informação-pessoal">
+      <label for="nome-paciente">Nome:</label>
+      <input type="text" id="nome-paciente" placeholder="Digite seu nome" />
+
+      <label for="idade-paciente">Idade:</label>
+      <input type="number" id="idade-paciente" placeholder="Digite sua idade" min="0" />
+
+      <label for="cor-fav">Cor favorita:</label>
+      <input type="text" id="cor-fav" placeholder="Qual é sua cor favorita?" />
+
+      <label for="comida-fav">Comidas Favoritas:</label>
+      <input type="text" id="comida-fav" placeholder="Quais são suas comidas favoritas?" />
+
+      <label for="hobbies">Hobbies:</label>
+      <input type="text" id="hobbies" placeholder="Quais são seus hobbies?" />
+
+      <label for="alergias">Alergias:</label>
+      <input type="text" id="alergias" placeholder="Possui alguma alergia?" />
+
+      <button id="botao-perfil" type="submit">Atualizar Informações</button>
+    </div>
+
+    <div class="historico-tratamento">
+      <h3>Histórico de Tratamento:</h3>
+      <ul>
+        <li>
+          <strong>Consulta em 15/08/2023 - Dr. Silva</strong>
+          <textarea rows="2" placeholder="Obsevações:"></textarea>
+        </li>
+        <li>
+          <strong>Exame de sangue em 18/08/2023</strong>
+          <textarea rows="2" placeholder="Obsevações:"></textarea>
+        </li>
+      </ul>
+    </div>
+
+    <div class="alterar-tema">
+      <h3>Personalização de Tema</h3>
+      <label for="cor-tema">Escolha a Cor do Tema:</label>
+      <input type="color" id="cor-tema" />
+    </div>
+  </section>
+      <script src="form.js" ></script>
+</body>
+
 </html>

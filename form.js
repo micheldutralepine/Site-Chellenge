@@ -47,8 +47,7 @@ document.addEventListener('DOMContentLoaded', function () {
        }
    }
 });
-
-    function leiaMais() {
+ function leiaMais() {
       var pontos = document.getElementById('pontos');
       var maisTexto = document.getElementById('mais');
       var btnLeiaMais = document.getElementById('btnLeiaMais');
@@ -63,4 +62,3 @@ document.addEventListener('DOMContentLoaded', function () {
         btnLeiaMais.innerHTML = 'Leia Menos';
       }
     }
-
