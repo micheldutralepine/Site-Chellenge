@@ -441,3 +441,24 @@ hr {
   padding: 0;
   border-radius: 0;
 }
+.img-banner {
+  position: relative;
+  width: 100%;
+  height: 500px;
+  overflow: hidden;
+ }
+ 
+ .img-banner img {
+  position: absolute;
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  display: none;
+ }
+ 
+ .img-banner img:first-child {
+  display: block;
+ }
+ .escondida {
+  display: none;
+}
