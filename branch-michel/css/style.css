@@ -31,7 +31,6 @@ html {
 }
 
 /* MENU NAVEGAÇÃO E HEADER */
-
 #header {
   display: flex;
   justify-content: center;
@@ -76,12 +75,21 @@ ul li {
 /* Banner */
 img {
   object-fit: cover;
-  width: 100%;
+  width: 100%
 }
 
 /* SECAO 1 - SOBRE O HOSPITAL */
 #secao1 {
   padding: 20px;
+}
+.secao1-hospital {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.hospital-container { 
+  width: 1400px;
 }
 
 .hospital-titulo {
@@ -93,11 +101,11 @@ img {
 
 .hospital-elementos {
   display: flex;
+  justify-content: space-evenly;
 }
-.hospital-container img {
+.hospital-img {
+  object-fit: cover;
   max-width: 400px;
-  max-height: 400px;
-  margin-right: 20px;
 }
 
 .hospital-conteudo {
@@ -138,16 +146,80 @@ button {
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.998);
 }
 button img {
-  display: none; 
-}
-.info-historia, .info-projeto, .info-atendimento {
   display: none;
+}
+.info-historia,.info-projeto,.info-atendimento {
+  display: none;
+  max-width: 600px;
+}
+
+@media (max-width: 1090px) {
+  .hospital-elementos {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+
+  .hospital-elementos img {
+    margin: auto;
+  }
+
+  .hospital-conteudo {
+    margin: auto;
+  }
 }
 
 @media (max-width: 850px) {
-  .hospital-container {
+  .hospital-elementos {
+    display: flex;
     flex-direction: column;
+  }
+}
+
+@media (max-width: 610px) {
+  .hospital-elementos button {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .hospital-elementos button {
+    margin: 10px auto;
+  }
+
+  #btnHistoria {
+    display: flex;
+    justify-content: center;
     align-items: center;
+  }
+
+  #btnProjeto {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  #btnAtendimento {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .hospital-img {
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 300px) {
+  .hospital-img {
+    max-width: 250px;
+  }
+}
+
+@media (max-width: 260px) {
+  .hospital-img {
+    max-width: 200px;
   }
 }
 
@@ -165,32 +237,26 @@ button img {
   gap: 30px;
 }
 
-.impactos-positivos,
-.impactos-negativos {
+.impactos-positivos, .impactos-negativos {
   padding: 30px;
   border: 2px solid #ccc;
   border-radius: 5px;
   text-align: start;
 }
 
-.impactos-positivos h1,
-.impactos-negativos h1 {
+.impactos-positivos h1, .impactos-negativos h1 {
   text-align: start;
   margin-bottom: 15px;
 }
 
-.impactos-positivos p,
-hr,
-.impactos-negativos p,
-hr {
+.impactos-positivos p, hr, .impactos-negativos p, hr {
   text-align: start;
   text-align: justify;
   color: #838383;
   margin-bottom: 10px;
 }
 
-.impactos-positivos li,
-.impactos-negativos li {
+.impactos-positivos li, .impactos-negativos li {
   padding-bottom: 15px;
   margin-left: 7px;
   color: #838383;
@@ -213,58 +279,69 @@ hr {
   }
 }
 
-/* Informações  */
-
-#secao3 h1 {
+/* SEÇÃO 3 - INFORMAÇÕES  */
+#secao3 {
+  padding: 20px;
   text-align: center;
-  margin-top: 30px;
-  margin-bottom: 15px;
 }
 
-.secao3 {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  max-width: 1400px;
-  margin: auto;
-  margin-bottom: 40px;
+.container-informacoes {
+  max-width: 1100px;
+  margin: 0 auto;
 }
 
-.table-container {
-  margin: auto;
+.container-informacoes h1 {
+  color: #428a91;
+  font-size: 3rem;
 }
 
-table {
-  margin: auto;
-}
-
-.table-container th {
+.atende-mais h2 {
+  text-align: left;
+  margin-top: 20px;
+  color: #428a91;
   font-size: 2.3rem;
-  background-color: #428a91;
-  color: #fff;
-  height: 40px;
+}
+.atende-mais p {
+  text-align: justify;
+  line-height: 1.6em;
 }
 
-.table-container td {
-  font-size: 1.7rem;
-  height: 30px;
-  width: 70ch;
-  text-align: center;
+.atende-mais a{
+  display: block;
+  text-align: left;
+  text-decoration: none;
+  color: #605bc1;
 }
 
-.pares {
-  background-color: rgba(198, 217, 246, 0.598);
+.como-chegar {
+  margin-top: 20px;
+  text-align: left;
 }
 
-.impares {
-  background-color: rgba(232, 240, 245, 0.815);
+.como-chegar h2 {
+  color: #428a91;
+  font-size: 2.3rem;
 }
 
-@media (max-width: 500px) {
-  .secao3 {
-    margin-left: 0;
-  }
+.como-chegar span {
+  color: black;
+  font-size: 1.5rem;
+  display: block;
+  margin-top: 15px;
 }
+
+.local-maps {
+  margin-top: 20px;
+  text-align: left;
+}
+
+.local-maps iframe {
+  width: 60%;
+  height: 400px;
+  border: 1px solid black;
+  border-radius: 8px;
+}
+
 
 /* SEÇÃO 5 - EDUCAÇÃO LÚDICA  */
 #secao5 {
@@ -326,6 +403,13 @@ table {
   }
 }
 
+@media (max-width: 312px) {
+  iframe {
+    width: 200px;
+    height: 120px;
+  }
+}
+
 /* Relatos */
 
 .relatos-titulo h2 {
@@ -342,7 +426,6 @@ table {
 }
 
 .relatos {
-  margin-top: 30px;
   background-color: #f2f2f2b7;
   padding: 40px;
 }
@@ -357,6 +440,27 @@ table {
   color: #428a91;
 }
 
+.depoimento-titulo {
+  display: flex;
+  gap: 10px;
+}
+
+.depoimento-titulo h2 {
+  display: flex;
+  align-items: center;
+  position: relative;
+}
+
+.depoimento-titulo h2::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background-image: linear-gradient(-50deg, #5ed4f8, #dbf4fb);
+  position: absolute;
+  top: 38px;
+}
+
 .depoimentos {
   display: grid;
   gap: 25px;
@@ -367,7 +471,8 @@ table {
 .depoimento2,
 .depoimento3,
 .depoimento4,
-.depoimento5 {
+.depoimento5,
+.depoimento6 {
   background-color: #dedede71;
   border-radius: 5px;
   padding: 20px 20px 100px 20px;
@@ -377,7 +482,8 @@ table {
 .depoimento2 h2,
 .depoimento3 h2,
 .depoimento4 h2,
-.depoimento5 h2 {
+.depoimento5 h2,
+.depoimento6 h2 {
   color: #545454;
 }
 
@@ -385,9 +491,11 @@ table {
 .depoimento2 h4,
 .depoimento3 h4,
 .depoimento4 h4,
-.depoimento5 h4 {
+.depoimento5 h4,
+.depoimento6 h4 {
   color: #428a91;
   padding: 10px 0 10px 0;
+  font-size: 1.65rem;
 }
 
 @media (max-width: 850px) {
@@ -415,7 +523,7 @@ table {
 }
 
 .foto-perfil {
-  position: relative;
+  position:relative;
   width: 160px;
   height: 160px;
   overflow: hidden;
@@ -468,6 +576,8 @@ table {
   border: none;
   border-radius: 4px;
   cursor: pointer;
+  width: 35%;
+  height: 35px;
 }
 
 #cor-tema {
@@ -479,10 +589,25 @@ table {
   border: none;
   padding: 0;
   border-radius: 0;
-  
+}
+/* efeito slide*/
+
+.carousel-container {
+  width: 100%;
+  margin: auto;
+  overflow: hidden;
 }
 
- .escondida {
+.carousel {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+
+.slide {
+  min-width: 100%;
+  box-sizing: border-box;
+}
+.escondida {
   display: none;
  }
  #botao-perfil{
@@ -496,6 +621,3 @@ table {
  
 
  }
-
-
-
