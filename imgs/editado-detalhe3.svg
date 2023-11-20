@@ -1,0 +1,8 @@
+<?xml version="1.0"?>
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg" xmlns:svg="http://www.w3.org/2000/svg">
+ <g class="layer">
+  <title>Layer 1</title>
+  <rect fill="#00a0ea" height="20" id="svg_1" transform="matrix(1 0 0 1 0 0) matrix(0.707107 -0.707107 0.707107 0.707107 -28.8995 54.2203)" width="120" x="-9" y="51.99"/>
+  <rect fill="#0074aa" height="20" id="svg_2" transform="matrix(0.707107 -0.707107 0.707107 0.707107 -20.201 73.2203)" width="120" x="16.87" y="50.99"/>
+ </g>
+</svg>
